@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Submitted - SafeHorizon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="animated-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="confirmation active">
+                <div class="screen-header">
+                    <h2>Request Submitted</h2>
+                    <p>Help is on the way</p>
+                </div>
+                
+                <div class="confirmation-content">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    
+                    <h3>Your request has been received</h3>
+                    <p class="confirmation-message">Emergency services have been notified and help is being dispatched to your location.</p>
+                    
+                    <div class="request-id">
+                        <span>Request ID:</span>
+                        <span id="request-id">SH-2023-12345</span>
+                    </div>
+                    
+                    <div class="details-box">
+                        <h4>Request Details</h4>
+                        <ul class="details-list">
+                            <li><span class="detail-label">Disaster Type:</span> <span id="conf-disaster">Earthquake</span></li>
+                            <li><span class="detail-label">Help Type:</span> <span id="conf-help">Medical Aid</span></li>
+                            <li><span class="detail-label">People Affected:</span> <span id="conf-count">3</span></li>
+                            <li><span class="detail-label">Urgency Level:</span> <span id="conf-urgency">Medium</span></li>
+                            <li><span class="detail-label">Status:</span> <span class="status-pending">Pending</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="location-box">
+                        <div class="location-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Your Location</h3>
+                        </div>
+                        <p id="conf-location">Latitude: 37.7749, Longitude: -122.4194</p>
+                        <p class="small-text">Rescue teams will use this location to find you</p>
+                    </div>
+                    
+                    <div class="emergency-contact">
+                        <p>Emergency Hotline: <strong>1-800-SAFE-NOW</strong></p>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="track-request-btn">
+                            <i class="fas fa-search"></i> Track Request
+                        </button>
+                        <button class="btn btn-outline" onclick="window.location.href='index.html'">
+                            <i class="fas fa-home"></i> Return Home
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/confirmation.js"></script>
+</body>
+</html>
+
