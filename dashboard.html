@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeHorizon - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <img src="images/avatar-placeholder.svg" alt="User Avatar">
+                    </div>
+                    <div class="user-info">
+                        <h3>John Doe</h3>
+                        <p>ID: #123456</p>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-user"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-address-book"></i> Emergency Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-headset"></i> Help Desk</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <button class="menu-toggle" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div class="app-info">
+                        <h1>SafeHorizon</h1>
+                        <p>Emergency Response Center</p>
+                    </div>
+                    
+                    <div class="theme-toggle">
+                        <button id="theme-toggle-btn">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="sos-button">
+                    <div class="sos-label">Need immediate Help?</div>
+                    <button class="btn-sos">
+                        <i class="fas fa-phone-alt"></i>
+                        Tap for SOS
+                    </button>
+                </div>
+            </header>
+            
+            <section class="dashboard-content">
+                <h2>Select Emergency Type</h2>
+                
+                <div class="emergency-grid">
+                    <div class="emergency-card earthquake">
+                        <div class="emergency-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <h3>Earthquake</h3>
+                    </div>
+                    
+                    <div class="emergency-card flood">
+                        <div class="emergency-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Flood</h3>
+                    </div>
+                    
+                    <div class="emergency-card fire">
+                        <div class="emergency-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Fire</h3>
+                    </div>
+                    
+                    <div class="emergency-card tsunami">
+                        <div class="emergency-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Tsunami</h3>
+                    </div>
+                    
+                    <div class="emergency-card accident">
+                        <div class="emergency-icon">
+                            <i class="fas fa-car-crash"></i>
+                        </div>
+                        <h3>Accident</h3>
+                    </div>
+                    
+                    <div class="emergency-card other">
+                        <div class="emergency-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Other</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+
