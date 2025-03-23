@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Disaster Type - SafeHorizon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="animated-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="disaster-selection active">
+                <div class="screen-header">
+                    <div class="back-button" onclick="window.location.href='index.html'">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <h2>SafeHorizon</h2>
+                    <p>Emergency Response Center</p>
+                </div>
+                
+                <div class="sos-button">
+                    <div class="sos-label">Need immediate Help?</div>
+                    <button class="btn-sos">
+                        <i class="fas fa-phone-alt"></i>
+                        Tap for SOS
+                    </button>
+                </div>
+                
+                <div class="disaster-content">
+                    <h3>Select Emergency Type</h3>
+                    
+                    <div class="disaster-grid">
+                        <div class="disaster-card" data-disaster="earthquake">
+                            <div class="disaster-image">
+                                <img src="images/earthquake.jpg" alt="Earthquake" >
+                            </div>
+                            <div class="disaster-info">
+                                <div class="disaster-icon">
+                                    <i class="fas fa-house-damage"></i>
+                                </div>
+                                <button style="border: none;"><a href="help-selection.html">Earthquake</a></button>
+                            </div>
+                        </div>
+                        
+                        <div class="disaster-card" data-disaster="flood">
+                            <div class="disaster-image">
+                                <img src="images/flood.jpg" alt="Flood">
+                            </div>
+                            <div class="disaster-info">
+                                <div class="disaster-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <button style="border: none;"><a href="help-selection.html">Flood</a></button>
+                            </div>
+                        </div>
+                        
+                        <div class="disaster-card" data-disaster="fire">
+                            <div class="disaster-image">
+                                <img src="images/fire.jpg" alt="Fire">
+                            </div>
+                            <div class="disaster-info">
+                                <div class="disaster-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <button style="border: none;"><a href="help-selection.html">Fire</a></button>
+                            </div>
+                        </div>
+                        
+                        <div class="disaster-card" data-disaster="tsunami">
+                            <div class="disaster-image">
+                                <img src="images/tsunami.jpg" alt="Tsunami">
+                            </div>
+                            <div class="disaster-info">
+                                <div class="disaster-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <button style="border: none;"><a href="help-selection.html">Tsunami</a></button>
+                            </div>
+                        </div>
+                        
+                        <div class="disaster-card" data-disaster="hurricane">
+                            <div class="disaster-image">
+                                <img src="images/hurricane.jpg" alt="Hurricane">
+                            </div>
+                            <div class="disaster-info">
+                                <div class="disaster-icon">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <button style="border: none;"><a href="help-selection.html">Hurricane</a></button>
+                            </div>
+                        </div>
+                        
+                        <div class="disaster-card" data-disaster="other">
+                            <div class="disaster-image">
+                                <img src="images/other.jpg" alt="Other Emergency">
+                            </div>
+                            <div class="disaster-info">
+                                <div class="disaster-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h4>Other</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/disaster.js"></script>
+</body>
+</html>
+
