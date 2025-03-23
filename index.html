@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Help Type - SafeHorizon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Animated Background -->
+        <div class="animated-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="help-selection active">
+                <div class="screen-header">
+                    <div class="back-button" onclick="window.location.href='disaster-selection.html'">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <h2>Emergency Assistance</h2>
+                    <p id="disaster-type-display">Earthquake</p>
+                </div>
+                
+                <div class="help-content">
+                    <h3>Select the type of help needed</h3>
+                    
+                    <div class="help-grid">
+                        <div class="help-card" data-help="medical">
+                            <div class="help-icon medical-icon">
+                                <i class="fas fa-briefcase-medical"></i>
+                            </div>
+                    
+                            <button style="border: none;"><a href="victim-count.html">Medical Aid</a></button>
+                            <p>Emergency medical assistance</p>
+                        </div>
+                        
+                        <div class="help-card" data-help="food">
+                            <div class="help-icon food-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <button style="border: none;"><a href="victim-count.html">Food</a></button>
+                            <p>Emergency food supplies</p>
+                        </div>
+                        
+                        <div class="help-card" data-help="shelter">
+                            <div class="help-icon shelter-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <button style="border: none;"><a href="victim-count.html">shelter</a></button>
+                            <p>Emergency shelter needs</p>
+                        </div>
+                        
+                        <div class="help-card" data-help="clothing">
+                            <div class="help-icon clothing-icon">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                            <button style="border: none;"><a href="victim-count.html">clothing</a></button>
+                            <p>Emergency clothing aid</p>
+                        </div>
+                        
+                        <div class="help-card" data-help="rescue">
+                            <div class="help-icon rescue-icon">
+                                <i class="fas fa-helicopter"></i>
+                            </div>
+                            <button style="border: none;"><a href="victim-count.html">Rescue</a></button>
+                            <p>Immediate rescue needed</p>
+                        </div>
+                        
+                        <div class="help-card" data-help="water">
+                            <div class="help-icon water-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <button style="border: none;"><a href="victim-count.html">water</a></button>
+                            <p>Clean water supplies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="important-note">
+                        <div class="note-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="note-content">
+                            <h4>Important Note</h4>
+                            <p>Help is on the way! Our emergency response teams are available 24/7. Stay calm and provide accurate location details for swift assistance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/help.js"></script>
+</body>
+</html>
+
